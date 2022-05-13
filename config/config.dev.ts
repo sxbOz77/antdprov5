@@ -12,4 +12,17 @@ export default defineConfig({
     babelPlugins: [],
     babelOptions: {},
   },
+
+  devServer: {
+    port: 8000,
+    proxy: {
+      '/api': {
+        target: 'https://public-api-v2.aspirantzhang.com/api',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '',
+        },
+      },
+    },
+  },
 });
