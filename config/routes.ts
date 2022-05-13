@@ -41,7 +41,13 @@
     name: 'list.table-list',
     icon: 'table',
     path: '/list',
-    component: './TableList',
+    component: './TableList'
+  },
+  {
+    name: 'basic-list',
+    icon: 'table',
+    path: '/basic-list',
+    component: './BasicList',
   },
   {
     path: '/',
